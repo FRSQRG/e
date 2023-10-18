@@ -1,0 +1,169 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Homenaje&display=swap');
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://squaregrillbath.co.uk/wp-content/uploads/2023/09/Vig-slide-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-family: 'Homenaje', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn {
+    background: #FB6549;
+    color: #ecf0f1;
+    width: 80%;
+    padding: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 16px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    letter-spacing: 0.2em;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #FF4D41;
+    cursor: pointer;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    background: rgba(47, 54, 64, 0.5);
+    margin: 0 auto;
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.box h3 {
+    color: #ecf0f1;
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+}
+
+.loginContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    font-family: inherit;
+    background: #ecf0f1;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 16px;
+    width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #DDDDDD;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+    letter-spacing: 0.15em;
+}
+
+.input:focus {
+    box-shadow: 0 0 5px rgba(251, 101, 73, 1);
+    border: 1px solid rgba(255, 77, 65, 1);
+}
+
+.errorMsg h3,
+.hideErrorMsg h3 {
+    color: #efefef;
+    font-weight: 700;
+    letter-spacing: 0.27em;
+    background: rgba(255, 77, 65, 0.5);
+    width: 75%;
+    padding: 10px;
+}
+
+.errorMsg h3 {
+    animation: slideIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.hideErrorMsg h3 {
+    animation: slideOut 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    display: none;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate3d(-20rem, 0, 500rem);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(-20rem, 0, 500rem);
+    }
+}
