@@ -1,4 +1,4 @@
-# Comprehensive Documentation for React Application
+# Comprehensive Documentation for Employee Discount
 
 ## Table of Contents
 1. [Introduction](#introduction)
